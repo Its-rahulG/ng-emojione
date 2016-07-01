@@ -20,7 +20,7 @@ Inject ```ngEmojione``` dependency into your app
 This will find any native unicode emoji and Convert it to it's shortnames !
 
 ```
-use {{ yourText | emojiOneToShort }}
+use <span ng-bind-html="yourText | emojiOneToShort "></span>
 ```
 Full example included in demo folder
 
@@ -30,7 +30,7 @@ Full example included in demo folder
 This will find any native unicode emoji and Convert it directly to imagess !
 
 ```
-use {{ yourText | emojiOneUnicodeToImage }}
+use <span ng-bind-html="yourText | emojiOneUnicodeToImage "></span>
 ```
 Full example included in demo folder
 
@@ -40,7 +40,7 @@ Full example included in demo folder
 This will find any shortnames of emojis and Convert it directly to imagess !
 
 ```
-use {{ yourText | emojiOneShortnameToImage }}
+use <span ng-bind-html="yourText | emojiOneShortnameToImage "></span>
 ```
 Full example included in demo folder
 
@@ -50,7 +50,7 @@ Full example included in demo folder
 This will find any native unicode emoji & shortnames and Convert it directly to images !
 
 ```
-use {{ yourText | emojiOneToImage }}
+use <span ng-bind-html="yourText | emojiOneToImage "></span>
 ```
 Full example included in demo folder
 
