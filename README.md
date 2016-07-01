@@ -6,12 +6,13 @@
 **Files size 1kb**
 
 ### Clone and include in your project
+Don't forget to add ng-sanitize module as dependency  
 
 ``` src/ng-emojione.min.js ```
 
 Inject ```ngEmojione``` dependency into your app
 
-``` angular.module('yourApp',['ngEmojione']); ```
+``` angular.module('yourApp',['ngSanitize','ngEmojione']); ```
 
 ### Filters available to use :
 
