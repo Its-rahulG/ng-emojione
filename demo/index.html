@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>ng-emojione</title>
+    <!-- Bootstrap library fro some styling purpose -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--Emoji One CSS library for displaying emoji icons and images-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.2.5/assets/css/emojione.min.css"/>
+
+</head>
+<body ng-controller="emojiOneController">
+<div class="container">
+    <h2 class="text-center"> <span ng-bind-html="title | emojiOneToImage"></span> </h2>
+
+    <div class="row well" style="padding: 10px">
+        <div class="col-md-8">
+        <h3>#1- Convert native unicode emoji to shortnames !</h3>
+            <h4 class="text-primary">Angular filter : emojiOneToShort </h4>
+            <br>
+        <p> <span class="label label-primary"> Text -</span> Convert native unicode emoji to shortnames- 😃 😉 😍</p>
+        <p>
+            <span class="label label-success"> Converted To -</span>  <span ng-bind-html="emojiOneToShortDemo | emojiOneToShortName"></span>
+        </p>
+            <a href="http://git.emojione.com/demos/latest/jstoimage.html" target="_blank">Learn more about this topic at emojiOne site</a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <h5>Try it yourself - <a href="http://apps.timwhitlock.info/emoji/tables/unicode" target="_blank">Emoji Unicode Tables</a></h5>
+            <input type="text" ng-model="message" class="form-control" placeholder="Type native unicode emoji ">
+            <br>
+            <span ng-bind-html="message | emojiOneToShortName"></span>
+        </div>
+    </div>
+
+
+
+    <div class="row well" style="padding: 10px">
+        <div class="col-md-8">
+            <h3>#2- Convert native unicode emoji directly to images</h3>
+            <h4 class="text-primary">Angular filter : emojiOneUnicodeToImage </h4>
+            <br>
+            <p> <span class="label label-primary"> Text -</span> Convert native unicode emoji directly to images- 😃 😉 😍</p>
+            <p>
+                <span class="label label-success"> Converted To -</span>  <span ng-bind-html="emojiOneToShortDemo | emojiOneUnicodeToImage"></span>
+            </p>
+            <a href="http://git.emojione.com/demos/latest/jsunicodetoimage.html" target="_blank">Learn more about this topic at emojiOne site</a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <h5>Try it yourself - <a href="http://apps.timwhitlock.info/emoji/tables/unicode" target="_blank">Emoji Unicode Tables</a></h5>
+            <input type="text" ng-model="message" class="form-control" placeholder="Type native unicode emoji ">
+            <br>
+            <span ng-bind-html="message | emojiOneUnicodeToImage"></span>
+        </div>
+    </div>
+
+    <div class="row well" style="padding: 10px">
+        <div class="col-md-8">
+            <h3>#3- Convert shortnames to images</h3>
+            <h4 class="text-primary">Angular filter : emojiOneShortnameToImage </h4>
+            <br>
+            <p> <span class="label label-primary"> Text -</span> convert shortnames to images- :athletic_shoe: :runner: :v: :alien:</p>
+            <p>
+                <span class="label label-success"> Converted To -</span>  <span ng-bind-html="emojiOneShortnameToImageDemo | emojiOneShortnameToImage"></span>
+            </p>
+            <a href="http://git.emojione.com/demos/latest/jsshortnametoimage.html" target="_blank">Learn more about this topic at emojiOne site</a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <h5>Try it yourself - <a href="http://emoji.codes" target="_blank">Visit & click on emoji to copy short name</a></h5>
+            <input type="text" ng-model="shortNameToImage" class="form-control" placeholder="Type native unicode emoji ">
+            <br>
+            <span ng-bind-html="shortNameToImage | emojiOneShortnameToImage"></span>
+        </div>
+    </div>
+
+
+
+    <div class="row well" style="padding: 10px">
+        <div class="col-md-8">
+            <h3>#4- Convert native unicode emoji and shortnames directly to images</h3>
+            <h4 class="text-primary">Angular filter : emojiOneToImage </h4>
+            <br>
+            <p> <span class="label label-primary"> Text -</span> Convert native unicode emoji and shortnames directly to images- :scream_cat: 🍇 :ghost: 🌷</p>
+            <p>
+                <span class="label label-success"> Converted To -</span>  <span ng-bind-html="emojiOneToImageDemo | emojiOneToImage"></span>
+            </p>
+            <a href="http://git.emojione.com/demos/latest/jstoimage.html" target="_blank">Learn more about this topic at emojiOne site</a>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <h5>Try it yourself - <a href="http://emoji.codes" target="_blank">Shortnames</a> &
+                <a href="http://apps.timwhitlock.info/emoji/tables/unicode" target="_blank">Native symbols</a></h5>
+            <input type="text" ng-model="toImage" class="form-control" placeholder="Type native unicode emoji ">
+            <br>
+            <span ng-bind-html="toImage | emojiOneToImage"></span>
+        </div>
+    </div>
+
+
+</div>
+
+<!--Angular library-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<!--Angualr sanitize for sanitizing html output (emojis)-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
+<!-- Emoji One Js library-->
+<script src="//cdn.jsdelivr.net/emojione/2.2.5/lib/js/emojione.min.js"></script>
+
+<!-- ng-emojione.js module for angualr -->
+<script src="app.js"></script>
+<script src="../src/ng-emojione.min.js"></script>
+
+</body>
+</html>
