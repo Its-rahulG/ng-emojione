@@ -6,7 +6,7 @@
 **Files size 1kb**
 
 ### Clone and include in your project
-Don't forget to add ng-sanitize module as dependency  
+Don't forget to add angular sanitize module as dependency  
 
 ``` src/ng-emojione.min.js ```
 
