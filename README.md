@@ -5,6 +5,14 @@
 
 **Files size 1kb**
 
+### Clone and include in your project
+
+``` src/ng-emojione.min.js ```
+
+Inject ```ngEmojione``` dependency into your app
+
+``` angular.module('yourApp',['ngEmojione']); ```
+
 ### Filters available to use :
 
 #### #1 emojiOneToShort
