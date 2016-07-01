@@ -1,7 +1,7 @@
 ## ng-emojione
 [EmojiOne](http://emojione.com/) filters for Angualr 1.x - Use most beautiful emojis in your project in less then 10 seconds !
 
-**Complete Demo included**
+[Live Demo](http://ng-emojione.esy.es/)
 
 **Files size 1kb**
 
