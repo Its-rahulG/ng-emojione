@@ -4,9 +4,21 @@
 [Live Demo](http://ng-emojione.esy.es/)
 
 **Files size 1kb**
+###CDN
+Include these into head of your document
 
-### Clone and include in your project
-Don't forget to add angular sanitize module as dependency  
+```
+<link rel="stylesheet" href="//cdn.jsdelivr.net/emojione/2.2.5/assets/css/emojione.min.css"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-sanitize.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/emojione/2.2.5/lib/js/emojione.min.js"></script>
+```
+
+
+### Clone and include in your project 
 
 ``` src/ng-emojione.min.js ```
 
